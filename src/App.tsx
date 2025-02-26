@@ -1,10 +1,8 @@
+import AppRouter from "./routes/AppRouter"
+
 function App() {
   return (
-    <>
-      <div>
-       TADA
-      </div>
-    </>
+   <AppRouter/>
   )
 }
 
