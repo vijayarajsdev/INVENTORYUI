@@ -26,7 +26,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li >
-          <Link
+          <Link to=''
            className="menu-link"
             onClick={() => setSalesToggle(!salesToggle)}>
             <SellIcon fontSize="small" /> Sales
