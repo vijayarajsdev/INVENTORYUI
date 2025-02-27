@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div style={{ display: "flex" ,margin:'-10px',padding:'0px'}}>
+    <div style={{ display: "flex" }}>
       <Sidebar />
-      <div style={{ flex: 1, padding: "20px" }}>
+      <div style={{ flex: 1, padding: "20px", marginLeft: "190px" }}>
         <h1>HOME</h1>
         <Outlet />
       </div>

@@ -20,7 +20,7 @@ const Sidebar = () => {
         </li>
         <li >
           <Link
-            to="/dashboard"
+            to="/items"
            className="menu-link">
             <ShoppingBagIcon fontSize="small" /> Items
           </Link>
@@ -36,21 +36,21 @@ const Sidebar = () => {
           <>
             <li className="inner-li">
               <Link
-                to="/dashboard"
+                to="/customers"
                className="menu-link">
                 Customers
               </Link>
             </li>{" "}
             <li className="inner-li">
               <Link
-                to="/dashboard"
+                to="/invoice"
                className="menu-link">
                 Invoice
               </Link>
             </li>{" "}
             <li className="inner-li">
               <Link
-                to="/dashboard"
+                to="/quotes"
                className="menu-link">
                 Quotes
               </Link>
