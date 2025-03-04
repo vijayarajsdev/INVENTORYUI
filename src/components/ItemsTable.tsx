@@ -1,5 +1,5 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link } from "@mui/material";
-import { Row } from "../pages/Items";
+import Row from "../pages/Items";
 
 interface ItemsTableProps {
   rows: Row[];

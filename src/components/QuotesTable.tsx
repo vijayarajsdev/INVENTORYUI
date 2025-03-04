@@ -1,5 +1,5 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link } from "@mui/material";
-import { Quote } from "../pages/Quotes";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
+import Quote from "../pages/Quotes";
 
 interface QuotesTableProps {
   rows: Quote[];

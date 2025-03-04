@@ -28,7 +28,7 @@ const Items = () => {
   };
   const handleClose = () => setOpen(false);
 
-  const handleModalClose = (event: {}, reason: "backdropClick" | "escapeKeyDown") => {
+  const handleModalClose = (reason: "backdropClick" | "escapeKeyDown") => {
     if (reason !== "backdropClick") {
       handleClose();
     }
