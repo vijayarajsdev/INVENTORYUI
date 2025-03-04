@@ -1,8 +1,8 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link } from "@mui/material";
-import { Row } from "../pages/Items";
+import { Row } from "../types"; // Import Row from the new types file
 
 interface ItemsTableProps {
-  rows: Row[];
+  rows: Row[]; // Fix the type here
   onEdit: (item: Row) => void;
 }
 

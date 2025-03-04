@@ -3,7 +3,7 @@ import { Button, Modal, Box, TextField, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import QuotesTable from "../components/QuotesTable";
 
-interface Quote {
+export interface Quote {
   id: number;
   customerName: string;
   date: string;

@@ -1,3 +1,4 @@
+import React from "react";
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link } from "@mui/material";
 import { Quote } from "../pages/Quotes"; // Fix import statement
 
