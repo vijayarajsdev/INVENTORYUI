@@ -1,5 +1,5 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link } from "@mui/material";
-import { Invoice } from "../pages/Invoice";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Input, Link, Button } from "@mui/material";
+import Invoice from "../pages/Invoice";
 
 interface InvoicesTableProps {
   rows: Invoice[];
