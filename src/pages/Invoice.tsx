@@ -51,7 +51,7 @@ const Invoice = () => {
       <div style={{display:'flex',justifyContent:'space-between'}}>
         <div>Invoices</div>
         <div>
-          <Button variant="outlined" onClick={() => handleOpen({ id: 0, customerName: "", date: "", amount: "", status: "" })}>+Add Invoice</Button>
+          <Button variant="outlined" onClick={() => handleOpen({ id: 0, customerName: "", date: "", amount: "", status: "" })}>Create Invoice</Button>
         </div>
       </div>
       

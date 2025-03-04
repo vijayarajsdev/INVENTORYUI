@@ -51,7 +51,7 @@ const Quotes = () => {
       <div style={{display:'flex',justifyContent:'space-between'}}>
         <div>Quotes</div>
         <div>
-          <Button variant="outlined" onClick={() => handleOpen({ id: 0, customerName: "", date: "", amount: "", status: "" })}>+Add Quote</Button>
+          <Button variant="outlined" onClick={() => handleOpen({ id: 0, customerName: "", date: "", amount: "", status: "" })}>Add Quote</Button>
         </div>
       </div>
       

@@ -57,7 +57,7 @@ const Customers = () => {
       <div style={{display:'flex',justifyContent:'space-between', marginBottom: '20px'}}>
         <div>Customers</div>
         <div>
-          <Button variant="outlined" onClick={() => handleOpen({ id: 0, name: "", email: "", phone: "", address: "", organization: "", gstin: "" })}>+Add Customer</Button>
+          <Button variant="outlined" onClick={() => handleOpen({ id: 0, name: "", email: "", phone: "", address: "", organization: "", gstin: "" })}>Add Customer</Button>
           <Button variant="outlined" color="error" onClick={handleDelete} style={{ marginLeft: '10px' }}>Delete</Button>
         </div>
       </div>

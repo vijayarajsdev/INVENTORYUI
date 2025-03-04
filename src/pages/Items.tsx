@@ -53,7 +53,7 @@ const Items = () => {
       <div style={{display:'flex',justifyContent:'space-between'}}>
         <div>Items</div>
         <div>
-          <Button variant="outlined" onClick={() => handleOpen({ id: 0, item: "", hsnCode: "", price: "", quantity: "", unit: "", gstRate: "18%" })}>+Add Item</Button>
+          <Button variant="outlined" onClick={() => handleOpen({ id: 0, item: "", hsnCode: "", price: "", quantity: "", unit: "", gstRate: "18%" })}>Add Item</Button>
         </div>
       </div>
       
