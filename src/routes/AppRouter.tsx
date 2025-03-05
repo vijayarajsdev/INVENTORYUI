@@ -6,6 +6,7 @@ import Customers from "../pages/Customers";
 import Invoice from "../pages/Invoice";
 import Quotes from "../pages/Quotes";
 import Settings from "../pages/Settings";
+import GstInvoice from "../pages/GstInvoice";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "/invoice", element: <Invoice /> },
       { path: "/quotes", element: <Quotes /> },
       { path: "/settings", element: <Settings /> },
+      {path:'/gst-invoice',element:<GstInvoice/>}
     ],
   },
 ]);
