@@ -48,6 +48,7 @@ const InvoiceTable = () => {
   ]);
   const [currentInvoice, setCurrentInvoice] = useState<Invoice>({
     id: 0,
+    invoiceNo: "",
     customerName: "",
     date: "",
     amount: 0,
@@ -110,6 +111,7 @@ const InvoiceTable = () => {
             onClick={() =>
               handleOpen({
                 id: 0,
+                invoiceNo: "",
                 customerName: "",
                 date: "",
                 amount: 0,
