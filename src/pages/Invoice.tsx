@@ -36,6 +36,7 @@ const Invoice = () => {
   ]);
   const [currentInvoice, setCurrentInvoice] = useState<Invoice>({
     id: 0,
+    invoiceNo: "",
     customerName: "",
     date: "",
     amount: "",
