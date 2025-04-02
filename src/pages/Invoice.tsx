@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 interface Invoice {
   id: number;
+  invoiceNo: string;
   customerName: string;
   date: string;
   amount: string;
@@ -17,6 +18,7 @@ const Invoice = () => {
   const [invoices, setInvoices] = useState<Invoice[]>([
     {
       id: 1,
+      invoiceNo: "INV001",
       customerName: "John Doe",
       date: "2023-01-01",
       amount: "1000.00",
@@ -24,6 +26,7 @@ const Invoice = () => {
     },
     {
       id: 2,
+      invoiceNo: "INV002",
       customerName: "Jane Smith",
       date: "2023-01-02",
       amount: "2000.00",

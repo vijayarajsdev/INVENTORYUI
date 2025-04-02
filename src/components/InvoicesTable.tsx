@@ -24,6 +24,7 @@ const InvoicesTable: React.FC<InvoicesTableProps> = ({ rows, onEdit }) => {
           {rows.map((invoice) => (
             <TableRow key={invoice.id}>
               <TableCell><Input type="checkbox"/></TableCell>
+              <TableCell>{invoice.invoiceNo}</TableCell>
               <TableCell>
                 <Link href="#" onClick={() => onEdit(invoice)}>
                   {invoice.customerName}
