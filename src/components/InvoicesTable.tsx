@@ -13,6 +13,7 @@ const InvoicesTable: React.FC<InvoicesTableProps> = ({ rows, onEdit }) => {
         <TableHead>
           <TableRow>
             <TableCell>Select</TableCell>
+            <TableCell>Invoice No</TableCell>
             <TableCell>Customer Name</TableCell>
             <TableCell>Date</TableCell>
             <TableCell>Amount</TableCell>

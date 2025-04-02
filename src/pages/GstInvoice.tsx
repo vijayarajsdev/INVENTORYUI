@@ -151,86 +151,100 @@ const GstInvoice = () => {
     <Box sx={{ p: 4 }}>
       <h2>Create GST Invoice</h2>
 
-      {/* Customer Details */}
-      <TextField
-        fullWidth
-        label="Customer Name"
-        margin="normal"
-        value={customerName}
-        onChange={(e) => setCustomerName(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Customer Address"
-        margin="normal"
-        value={customerAddress}
-        onChange={(e) => setCustomerAddress(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Customer Mobile"
-        margin="normal"
-        value={customerMobile}
-        onChange={(e) => setCustomerMobile(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Customer Email"
-        margin="normal"
-        value={customerEmail}
-        onChange={(e) => setCustomerEmail(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Customer GSTIN"
-        margin="normal"
-        value={customerGstin}
-        onChange={(e) => setCustomerGstin(e.target.value)}
-      />
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 2,
+          "& .MuiTextField-root": {
+            minWidth: "calc(50% - 16px)",
+            flex: 1,
+          },
+        }}>
+        {/* Customer Details */}
+        <TextField
+          fullWidth
+          label="Customer Name"
+          margin="normal"
+          value={customerName}
+          onChange={(e) => setCustomerName(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Customer Address"
+          margin="normal"
+          value={customerAddress}
+          onChange={(e) => setCustomerAddress(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Customer Mobile"
+          margin="normal"
+          value={customerMobile}
+          onChange={(e) => setCustomerMobile(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Customer Email"
+          margin="normal"
+          value={customerEmail}
+          onChange={(e) => setCustomerEmail(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Customer GSTIN"
+          margin="normal"
+          value={customerGstin}
+          onChange={(e) => setCustomerGstin(e.target.value)}
+        />
 
-      {/* Invoice Details */}
-      <TextField
-        fullWidth
-        label="Invoice Date"
-        margin="normal"
-        value={invoiceDate}
-        onChange={(e) => setInvoiceDate(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Due Date"
-        margin="normal"
-        value={dueDate}
-        onChange={(e) => setDueDate(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Terms"
-        margin="normal"
-        value={terms}
-        onChange={(e) => setTerms(e.target.value)}
-      />
-      <TextField
-        fullWidth
-        label="Place of Supply"
-        margin="normal"
-        value={placeOfSupply}
-        onChange={(e) => setPlaceOfSupply(e.target.value)}
-      />
+        {/* Invoice Details */}
+        <TextField
+          fullWidth
+          label="Invoice Date"
+          margin="normal"
+          value={invoiceDate}
+          onChange={(e) => setInvoiceDate(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Due Date"
+          margin="normal"
+          value={dueDate}
+          onChange={(e) => setDueDate(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          label="Terms"
+          margin="normal"
+          value={terms}
+          onChange={(e) => setTerms(e.target.value)}
+        />
+        <TextField
+          sx={{ width: "50%" }} // Explicitly calculate half width minus gap
+          label="Place of Supply"
+          margin="normal"
+          value={placeOfSupply}
+          onChange={(e) => setPlaceOfSupply(e.target.value)}
+        />
+      </Box>
 
       {products.map((product, index) => (
         <Box key={index} sx={{ display: "flex", gap: 2, marginBottom: 2 }}>
           <TextField
+            sx={{ width: "310px" }} // Fixed width instead of flex
             label="Product Name"
             value={product.name}
             onChange={(e) => handleProductChange(index, "name", e.target.value)}
           />
           <TextField
+            sx={{ width: "110px" }} // Increased from 100px
             label="HSN/SAC"
             value={product.hsn}
             onChange={(e) => handleProductChange(index, "hsn", e.target.value)}
           />
           <TextField
+            sx={{ width: "90px" }} // Increased from 80px
             label="Quantity"
             value={product.quantity}
             onChange={(e) =>
@@ -238,16 +252,19 @@ const GstInvoice = () => {
             }
           />
           <TextField
+            sx={{ width: "110px" }} // Increased from 100px
             label="Rate"
             value={product.rate}
             onChange={(e) => handleProductChange(index, "rate", e.target.value)}
           />
           <TextField
+            sx={{ width: "90px" }} // Increased from 80px
             label="CGST %"
             value={product.cgst}
             onChange={(e) => handleProductChange(index, "cgst", e.target.value)}
           />
           <TextField
+            sx={{ width: "90px" }} // Increased from 80px
             label="SGST %"
             value={product.sgst}
             onChange={(e) => handleProductChange(index, "sgst", e.target.value)}
